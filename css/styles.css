@@ -5,7 +5,7 @@ html {
 body {
     background-color: rgb(255, 244, 223);
     font-family: 'Montserrat', sans-serif;
-    margin: 5px;
+     margin: 0; 
 }
 
 
@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 
@@ -33,21 +33,21 @@ body {
     }
 }
 
-h1{
+h1 {
     font-size: 150px;
     font-weight: 400;
-    padding: 10px;
+    padding: 50px;
     margin: 5px;
 }
 
-h2{
-    font-size: 50px;
+h2 {
+    font-size: 40px;
     font-weight: 300;
     padding: 5px;
-margin: 5px;
+    margin: 5px;
 }
 
-  a {
+a {
     color: #000000;
     position: relative;
     text-decoration: none;
@@ -60,7 +60,8 @@ a::before {
     height: 4px;
     border-radius: 4px;
     background-color: #79136b;
-    bottom: -3px; /* Cambia el valor a -3px */
+    bottom: -3px;
+    /* Cambia el valor a -3px */
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
@@ -70,13 +71,20 @@ a::before {
 a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-    bottom: -3px; /* Cambia el valor a -3px */
+    bottom: -3px;
+    /* Cambia el valor a -3px */
 }
 
-main{
-    background-image: url(https://wallpapers.com/images/high/boutique-clothes-on-wire-racks-mirror-fu3pt1du9vz9u4rm.webp);
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center top 50px;
-    
+
+
+main {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url(https://wallpapers.com/images/high/boutique-clothes-on-wire-racks-mirror-fu3pt1du9vz9u4rm.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 600px;
+    padding: 0;
+    color: black;
+    margin-bottom: 10px;
+
 }
