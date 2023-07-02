@@ -39,12 +39,30 @@ h1 {
     padding: 50px;
     margin: 5px;
 }
-
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+        font-weight: 400;
+        padding: 20px;
+        margin: 5px;
+    }
+    
+}
 h2 {
     font-size: 40px;
     font-weight: 300;
     padding: 5px;
     margin: 5px;
+}
+
+@media (max-width: 768px) {
+    
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+        padding: 5px;
+        margin: 5px;
+    }
 }
 
 a {
@@ -87,4 +105,19 @@ main {
     color: black;
     margin-bottom: 10px;
 
+}
+
+@media (max-width: 768px) {
+    
+    main {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url(https://wallpapers.com/images/high/boutique-clothes-on-wire-racks-mirror-fu3pt1du9vz9u4rm.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 400px;
+        padding: 0;
+        color: black;
+        margin-bottom: 10px;
+    
+    }
 }
