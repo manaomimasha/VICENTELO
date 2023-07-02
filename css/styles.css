@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 244, 223);
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+}
+
+
+.whatsapp-image {
+    width: 200px;
+    /* Cambia el valor "200px" al tamaño deseado */
+    height: auto;
+    /* Esto mantendrá la proporción original de la imagen */
+}
+
+.nav-principal {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+@media (min-width: 768px) {
+    .nav-principal {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 30px 50px;
+    }
+}
+
+h1{
+    font-size: 150px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 5px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 300;
+    padding: 5px;
+margin: 5px;
+}
+
+  a {
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #79136b;
+    bottom: -3px; /* Cambia el valor a -3px */
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    bottom: -3px; /* Cambia el valor a -3px */
+}
+
+main{
+    background-image: url(https://wallpapers.com/images/high/boutique-clothes-on-wire-racks-mirror-fu3pt1du9vz9u4rm.webp);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center top 50px;
+    
+}
